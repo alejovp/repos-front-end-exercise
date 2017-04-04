@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marfeel github repos finder</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://use.fontawesome.com/1a858aad99.js"></script>
+</head>
+<body>
+  <header>
+    <a href=""><h1>My repo App</h1></a>
+    <a id="upButton" class="hidden" href="#"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+  </header>
+  <main>   
+    <section>
+      <p>
+        Welcome to My repo App!, type a Github username and we will find the available repos for you in just one click!!
+      </p>
+      <div class="searchCont">
+        <form action="" class="searchBox">
+          <input class="searchBox" type="text">
+          <button type="submit" href="">Search</button>
+        </form>
+      </div>
+    </section>
+    <section class="resultsCont">
+      <div class="hidden" id="errorCont">
+        <p>Username not found!, please check your input and try again.</p>
+      </div>
+      <div class="results hidden">
+        <div>
+          <img id="usersImg" class="userData" src="">
+          <div class="userInfo">
+            <h4 class="userData"></h3>
+            <p class="userData"></p>
+            <p class="userData"></p>
+          </div>
+        </div>
+        <div>
+          <p><span id="reposQtty"></span> Repositories found</p>
+        </div>
+        <div>
+          <table id="resultsList"></table>
+        </div>
+      </div>    
+    </section>
+  </main>
+  <footer>
+    <p>Created by alejovp</p>
+    <a href="https://github.com/alejovp" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/alejovp78" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  </footer>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
