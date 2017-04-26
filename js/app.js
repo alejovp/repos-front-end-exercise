@@ -43,9 +43,9 @@ function showUserData (listResults) {
   errorBox.classList.add('hidden')
   resultBox.classList.remove('hidden')
   userDataBoxes[0].src = userPhoto
-  userDataBoxes[1].innerHTML = userName || 'Empty'
-  userDataBoxes[2].innerHTML = userEmail || 'Empty'
-  userDataBoxes[3].innerHTML = userBio || 'Empty'
+  userDataBoxes[1].innerHTML = userName || 'Username: <em>Empty</em>'
+  userDataBoxes[2].innerHTML = userEmail ? `Email: ${userEmail}` : 'Email: <em>Empty</em>'
+  userDataBoxes[3].innerHTML = userBio ? `Bio: ${userBio}` : 'Bio: <em>Empty</em>'
 }
 
 function showRepos (reposList) {
@@ -54,7 +54,7 @@ function showRepos (reposList) {
     `<tr class="repos">
       <td>${repo.name}</td>
       <td><i class="fa fa-code-fork" aria-hidden="true"></i> <span>${repo.forks_count}</span> <i class="fa fa-star" aria-hidden="true"></i> <span>${repo.stargazers_count}</span></td>
-    </tr>` + '\n'
+    </tr>`
     ).join('')
   textField.value = ''
   errorBox.classList.add('hidden')
